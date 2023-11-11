@@ -21,9 +21,10 @@ function Select({
             >
                 { options?.map(() => (
                     <option 
-                    key={options} 
-                    value={Option}>
-                        {options}
+                    key={option} 
+                    value={Option}
+                    >
+                        {option}
                     </option>
                 ))}
                 
@@ -34,4 +35,4 @@ function Select({
     );
 }
 
-export default Select;
+export default React.forwardRef (Select)
