@@ -15,7 +15,7 @@ import EditPost from "./pages/EditPost";
 
 import Post from "./pages/Post";
 
-import AllPosts from "./pages/AllPosts";
+import AllPosts from "./pages/AllPost.jsx";
 
 const router = createBrowserRouter([
   {
@@ -79,7 +79,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider 
+    store={store}>
     <RouterProvider router={router}/>
     </Provider>
   </React.StrictMode>,

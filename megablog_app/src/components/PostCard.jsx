@@ -20,3 +20,5 @@ function PostCard({ $id , title, FeatureImage}) {
         </Link>
     )
 }
+
+export default PostCard
